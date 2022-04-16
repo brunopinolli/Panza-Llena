@@ -388,15 +388,16 @@ p {
 
 /*--------------------UBICACION------------------*/
 
-.ubicacion{
+.ubicacion {
     display: flex;
-    background-color: black;
-    align-content: center;
+    /*align-content: center;*/
+    justify-content: center;
+    
 }
-.mapa{
-    margin: auto, 0;
+h2{
+    size: 5rem;
+}
 
-}
 
 
 
