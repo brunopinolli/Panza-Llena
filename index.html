@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panza llena, Corazon Copntento!:)</title>
-    <link rel="shortcut icon" href="./MULTIMEDIA/android-icon-144x144.png">
+    <link rel="shortcut icon" href="./multimedia/android-icon-144x144.png">
 
 
     <link rel="stylesheet" href="./css/estilos.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <!--<link rel="stylesheet" href="/css/bootstrap.min.css">-->
+
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
@@ -24,7 +24,7 @@
 <body class="body">
     <div class="container-fuid">
 
-        <header class="row header">
+        <header class="header">
 
             <div class="col-lg-8 col-md-8 col-sm-12">
                 <section class="encabezado">
@@ -47,26 +47,38 @@
                 </section>
             </div>
 
+            
+    
+
+            <nav class="row navegador" class="navbar navbar-expand-sm navbar-toggle">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-target="navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div id="navbarNavDropdown">
+                        <ul class="col-lg-6 col-md-1 col-sm-1 menu" class="navbar-nav">
+
+                            <li class="nav-item"><a href="./index.html" class="navbar-brand"  class="nav-link"> Inicio</a> </li>
 
 
-            <nav class="row navegador">
-                <ul class="col-lg-3 cpl-md-6 col-sm-12 menu">
-
-                    <li><a href="./index.html"> Inicio</a> </li>
+                            <li class="nav-item"> <a href="./paginas/contacto.html" class="nav-link">Contacto </a> </li>
 
 
-                    <li> <a href="./paginas/contacto.html">Contacto </a> </li>
+                            <li class="nav-item"><a href=./paginas/galeria.html class="nav-link">Galeria</a> </li>
 
 
-                    <li><a href="./paginas/galeria.html">Galeria</a> </li>
+                            <li class="nav-item"><a href="./paginas/nosotros.html" class="nav-link">Nosotros</a></li>
 
 
-                    <li><a href="./paginas/nosotros.html">Nosotros</a></li>
+                            <li class="nav-item"><a href="./paginas/ubicacion.html" class="nav-link">Ubicacion</a></li>
 
+                        </ul>
 
-                    <li><a href="./paginas/ubicacion.html">Ubicacion</a></li>
+                    </div>
+                </div>
 
-                </ul>
             </nav>
 
 
@@ -83,12 +95,19 @@
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
         </section>-->
 
-        <section class="row img-txt">
+        <section class="container-fuid img-txt">
             <!--bloque de imagen y texto-->
-            <div class="bloquedelaImagen">
+            <div class="row bloquedelaImagen">
                 <div class="imagen">
-                    <img src="../roots/MULTIMEDIA/portada 2.png" alt="logo" width="600" height="200" class="img-fluid">
 
+                    <img src="./multimedia/tortacumple.jpg" alt="img2" width="300" height="100" class="img-fluid">
+                    <img src="./multimedia/selva-negra.jpg" width="300" height="75" class="img-fluid">
+                    <img src="./multimedia/Lemon_pie.webp" width="300" height="100" class="img-fluid">
+                    <div class="css-button-sharp--rose">
+
+
+                        <a href="./paginas/contacto.html"><strong>CLICK acá para personalizar tu postre!!</strong></a>
+                    </div>
                 </div>
             </div>
             <div class="bloquedelTexto">
@@ -111,12 +130,12 @@
         <hr />
 
 
-        <footer class="row footer">
+        <footer class="container-fuid footer">
 
             <section class="bloquefooter">
                 <div class="nav-footer">
                     <nav class="row navegador">
-                        <ul class="col-lg-3 cpl-md-6 col-sm-12 menu">
+                        <ul class="col-lg-6 col-md-1 col-sm-1 menu">
 
                             <li><a href="./index.html"> Inicio</a> </li>
 
@@ -160,7 +179,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-    <!--<script src="/js/bootstrap.min.js"></script>-->
-</body>
+
+        
+
+
+
+    </body>
 
 </html>

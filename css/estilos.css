@@ -9,62 +9,50 @@ html {
 
 /*pruba de color para el body*/
 .body {
-    background: rgb(233, 195, 108);
-    background: linear-gradient(0deg, rgba(233, 195, 108, 1) 0%, rgba(240, 224, 189, 1) 100%);
-    /*background-image: url(../MULTIMEDIA/Fondo\ Body\ 2.png);*/
+    background: rgba(57, 48, 48, 0.5);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(6.5px);
+    -webkit-backdrop-filter: blur(6.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
     opacity: 80%;
     align-items: center;
 
 
-    /*grid-template-areas:
-        "header header"
-        "img-text img-text"
-        "footer footer";*/
-
 }
 
-/*
-.header{
-    grid-area: header;
-}
-.img-txt{
-    grid-area: img-txt;
-}
-.footer{
-    grid-area: footer;
-}*/
+
+
 .encabezado {
 
     font-style: italic;
     font-family: cursive;
+    background: rgba(232, 187, 187, 0.5);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(6.5px);
+    -webkit-backdrop-filter: blur(6.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .header {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-items: content;
     flex-direction: column;
-    flex-wrap: wrap;
+    align-items: center;
+    background: rgba(232, 187, 187, 0.5);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(6.5px);
+    -webkit-backdrop-filter: blur(6.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
 }
 
 .encabezado {
     display: flex;
-    /*grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(4, 100px);
-        grid-template-areas:
-        "logo logo titulo titulo titulo"
-        "logo logo titulo titulo titulo"
-        "slogan slogan slogan slogan slogan"
-        "slogan slogan slogan slogan slogan"*/
-
-    flex-direction: row;
     justify-content: center;
-
     flex-wrap: wrap;
-
-
-
-
 
 }
 
@@ -127,7 +115,12 @@ html {
 }
 
 .footer {
-    /*background-color: rgb(194, 233, 243);*/
+    background: rgba(232, 187, 187, 0.5);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(6.5px);
+    -webkit-backdrop-filter: blur(6.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
     text-align: right;
     font-size: 2rem;
     font-family: cursive;
@@ -135,9 +128,6 @@ html {
 
 }
 
-.footer:hover {
-    height: 150px;
-}
 
 
 
@@ -160,95 +150,119 @@ html {
 
 }
 
-.logo-redes {
+.logo-redes li a {
     list-style: none;
-
-
+    color: black;
+    text-decoration: none;
 }
 
-/*#portada {
-    background-color: rgb(194, 233, 243);
 
-}*/
+
 
 .navegador {
     display: flex;
     justify-items: end;
     flex-direction: row;
+    list-style: none;
+    text-decoration: none;
+
 
 
 }
 
 .menu {
     display: flex;
+    width: 200px;
     padding: 10px 10px;
-    position: relative;
     list-style: none;
-    gap: 2rem;
-    text-align: right;
-    font-size: 2rem;
+    gap: 1rem;
+    font-size: 1.5rem;
     font-family: cursive;
+    text-decoration: none;
 
-    justify-content: space-between;
-
-    /*background-image: url(../MULTIMEDIA/59894-para-ninas.jpg);*/
 
 }
 
-.menu li {
+.menu li a {
     display: flex;
     text-decoration: none;
-    color: aliceblue;
-    justify-content: space-evenly;
 
+    justify-content: space-evenly;
+    list-style: none;
+    color: black;
 }
 
 .menu li:hover {
     transform: scale(1.1, 1.1);
+
 }
 
 .img-txt {
 
-    display: grid;
+    display: flex;
     margin: 5px;
-
-    width: 100%;
+    background: rgba(232, 187, 187, 0.5);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(6.5px);
+    -webkit-backdrop-filter: blur(6.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    width: 1200px;
     height: 350px;
     border: double 2px black;
-    align-items: center;
-    justify-content: center;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas:
-        "imagen imagen bloquedelTexto"
-        "imagen imagen bloquedelTexto"
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 100px;
+}
+.imagen a{
+    text-decoration: none;
+    list-style: none;
+    color: rgb(5, 4, 3);
+}
+
+.css-button-sharp--rose {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border: 2px solid rgba(232, 187, 187, 0.5);
+    background: rgba(232, 187, 187, 0.5);
+}
+
+.css-button-sharp--rose:hover {
+    background: #fff;
+    color: rgba(232, 187, 187, 0.5)
 }
 
 .imagen {
     grid-area: imagen;
     margin-left: 50px;
+
 }
-
-
-
-
-
 
 .bloquedelTexto {
     display: flex;
-
     padding: 5px;
-    /*position: absolute;*/
     right: 50px;
     top: 250px;
-    display: flex;
-    /*background-color: rgb(194, 233, 243);*/
     font-size: 1rem;
     font-family: cursive;
     border: solid 2px black;
     margin: 5px;
     text-align: justify;
-    /*flex-wrap: wrap;*/
-    grid-area: bloquedelTexto;
+    flex-direction: row;
+    background: rgba(232, 187, 187, 0.5);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(6.5px);
+    -webkit-backdrop-filter: blur(6.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
 
 }
 
@@ -393,99 +407,25 @@ p {
     /*align-content: center;*/
     justify-content: center;
     font-size: 2rem;
-    
-}
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*diseño para mobile*/
-
-
-@media screen and (max-width:425px) {
-    .body {
-        display: grid;
-        grid-template-columns: 1fr;
-        /*grid-template-rows: repeat(3, 1fr);*/
-        grid-template-areas:
-            "header "
-            "img-txt "
-            "footer ";
-
-    }
-
-
-    .header {
-        grid-area: header;
-
-    }
-
-    .img-txt {
-        display: flex;
-        grid-area: img-txt;
-        flex-direction: column;
-        align-items: center;
-
-    }
-
-    .bloquedelTexto {
-        justify-content: baseline;
-
-    }
-
-    .footer {
-        grid-area: footer;
-
-
-    }
-
-    .bloquefooter {
-        flex-wrap: wrap;
-        display: flex;
-        justify-content: center;
-    }
-
-
-
 
 }
 
-/* diseño tablet*/
 
 
-@media screen and (max-width:768px) {
-    .body {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-areas:
-            "header header header"
-            "img-txt img-txt img-txt"
-            "footer footer footer";
 
-    }
 
-    .img-txt {
-        grid-area: img-txt;
-    }
 
-    .footer {
-        grid-area: footer;
-    }
 
-    .header {
-        grid-area: header;
-    }
 
-}
+
+
+
+
+
+
+
+
+/*diseño para */
+
+
+@media screen and (max-width: 1040px) {}
