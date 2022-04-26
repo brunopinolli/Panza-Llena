@@ -207,14 +207,15 @@ html {
     -webkit-backdrop-filter: blur(6.5px);
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
-    width: 1200px;
+    width: auto;
     height: 350px;
     border: double 2px black;
     flex-direction: row;
     flex-wrap: wrap;
     margin-left: 100px;
 }
-.imagen a{
+
+.imagen a {
     text-decoration: none;
     list-style: none;
     color: rgb(5, 4, 3);
@@ -407,75 +408,6 @@ p {
     /*align-content: center;*/
     justify-content: center;
     font-size: 2rem;
-<<<<<<< HEAD
-=======
-    
-}
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*diseño para mobile*/
-
-
-@media screen and (max-width:425px) {
-    .body {
-        display: grid;
-        grid-template-columns: 1fr;
-        /*grid-template-rows: repeat(3, 1fr);*/
-        grid-template-areas:
-            "header "
-            "img-txt "
-            "footer ";
-
-    }
-
-
-    .header {
-        grid-area: header;
-
-    }
-
-    .img-txt {
-        display: flex;
-        grid-area: img-txt;
-        flex-direction: column;
-        align-items: center;
-
-    }
-
-    .bloquedelTexto {
-        justify-content: baseline;
-
-    }
-
-    .footer {
-        grid-area: footer;
-
-
-    }
-
-    .bloquefooter {
-        flex-wrap: wrap;
-        display: flex;
-        justify-content: center;
-    }
-
-
-
->>>>>>> 424568e7c56ebf4dd10d73d7ecdc2de334340c32
 
 }
 
@@ -495,6 +427,28 @@ p {
 
 
 /*diseño para */
+@media screen and (max-width:1200px) {}
+
+@media screen and (max-width: 1040px) {
+    .img-txt {
+        display: flex
+    }
+
+    .imagen img {
+        width: auto;
+        height: 95px;
+    }
 
 
-@media screen and (max-width: 1040px) {}
+
+}
+
+@media screen and (max-width:769px) {}
+
+@media screen and (max-width:575px) {}
+
+@media screen and (max-width: 480px) {}
+
+
+
+@media (max-width: 375px) and (min-width: 320px)
