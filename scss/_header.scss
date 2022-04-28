@@ -1,0 +1,72 @@
+.menu {
+    display: flex;
+    width: 200px;
+    padding: 10px 10px;
+    list-style: none;
+    gap: 1rem;
+    font-size: 1.5rem;
+    font-family: cursive;
+    text-decoration: none;
+
+    li a {
+        display: flex;
+        text-decoration: none;
+        justify-content: space-evenly;
+        list-style: none;
+        color: black;
+
+        &:hover {
+            transform: scale(1.1, 1.1);
+        }
+    }
+}
+.logo {
+    grid-area: logo;
+    margin-right: 20px;
+    padding: 10px;
+    img{
+        transition: 2s;  
+        &:hover{
+            transform: rotate(20deg) 
+        }
+    }
+}
+
+.encabezado {
+
+    font-style: italic;
+    font-family: cursive;
+    background: $colorPrincipal;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(6.5px);
+    -webkit-backdrop-filter: blur(6.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.header {
+    display: flex;
+    justify-items: content;
+    flex-direction: column;
+    align-items: center;
+    background: $colorPrincipal;
+    box-shadow: 0 8px 32px 0 $coloSecundario;
+    backdrop-filter: blur(6.5px);
+    -webkit-backdrop-filter: blur(6.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+}
+
+.encabezado {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.encabezado2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

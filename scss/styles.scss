@@ -1,0 +1,36 @@
+
+@import "variables";
+@import "header";
+@import "contacto";
+@import "nosotros";
+
+
+
+
+.css-button-sharp--rose {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border: 2px solid rgba(232, 187, 187, 0.5);
+    background: $colorPrincipal;
+    &:hover {
+        background: #fff;
+        color: rgba(232, 187, 187, 0.5)
+    }
+}
+.imagen {
+    grid-area: imagen;
+    margin-left: 50px;
+    a{
+        text-decoration: none;
+        list-style: none;
+        color: rgb(5, 4, 3);
+    }  
+}
